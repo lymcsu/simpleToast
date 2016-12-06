@@ -1,0 +1,58 @@
+.simple-toast-pop {
+  min-width: 160px;
+  height: 45px;
+  border-radius: 4px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  background: #000 \0;
+  left: 50%;
+  top: 40%;
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.simple-toast-pop .simple-toast-close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #666;
+}
+.simple-toast-pop .simple-toast-icon {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+  float: left;
+  margin-right: -46px;
+}
+.simple-toast-pop .simple-toast-icon i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+.simple-toast-pop .simple-toast-icon i.error {
+  color: red;
+}
+.simple-toast-pop .simple-toast-icon i.warning {
+  color: yellow;
+}
+.simple-toast-pop .simple-toast-icon i.success {
+  color: green;
+}
+.simple-toast-pop .simple-toast-icon i.notice {
+  color: blue;
+}
+.simple-toast-pop .simple-toast-message {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px 0 46px;
+  font-size: 14px;
+}
+.simple-toast-pop .simple-toast-message p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}

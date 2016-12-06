@@ -1,0 +1,65 @@
+$toast-width: 160px;
+$toast-height: 45px;
+@mixin transform($transform){
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+@mixin lineHeight($height){
+	height: $height;
+	line-height: $height;
+}
+.simple-toast-pop{
+	min-width: $toast-width;
+	height: $toast-height;
+	border-radius: 4px;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	background: #000\0;
+	left: 50%;
+	top: 40%;
+	display: none;
+	@include transform(translate(-50%,-50%));
+	.simple-toast-close{
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		font-size: 12px;
+		cursor: pointer;
+		color: #666;
+	}
+	.simple-toast-icon{
+		@include lineHeight($toast-height);
+		padding: 0 10px;
+		float: left;
+		margin-right: -46px;
+		i{
+			font-size: 22px;
+			vertical-align: middle;
+		}
+		i.error{
+			color: red;
+		}
+		i.warning{
+			color: yellow;
+		}
+		i.success{
+			color: green;
+		}
+		i.notice{
+			color: blue;
+		}
+	}
+	.simple-toast-message{
+		@include lineHeight($toast-height);
+		padding: 0 20px 0 46px;
+		font-size: 14px;
+		p{
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
